@@ -19,3 +19,7 @@ insert into graduates (ID,Name,Age,Gender,Points) select ID, name, Age, Gender, 
 SELECT * from graduates;
 UPDATE graduates SET Graduation="08/09/2018" WHERE ID=4;
 DELETE from students where ID=4;
+
+CREATE table comEmp( name Text,Company Text ,companyDate date);
+select E.name from employees E ,companies C where E.id=C.id and C.date<2000;
+select C.name from companies C,employees E WHERE E.id=C.id and E.Role like "Graphic Designer";
