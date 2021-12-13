@@ -23,3 +23,9 @@ DELETE from students where ID=4;
 CREATE table comEmp( name Text,Company Text ,companyDate date);
 select E.name from employees E ,companies C where E.id=C.id and C.date<2000;
 select C.name from companies C,employees E WHERE E.id=C.id and E.Role like "Graphic Designer";
+
+select max(points) from students;
+select avg(points) from students;
+select count(*) as number from students where Points=500;
+select name from students where name like "%s%";
+select name from students ORDER By Points DESC;
